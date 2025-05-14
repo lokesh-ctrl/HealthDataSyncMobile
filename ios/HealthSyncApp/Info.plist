@@ -48,5 +48,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>This app reads your Health data to sync with other devices.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>This app syncs your step count data securely.</string>
 </dict>
 </plist>
