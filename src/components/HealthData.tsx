@@ -8,6 +8,7 @@ import {Button, Provider as PaperProvider, Text} from 'react-native-paper';
 import {useHealthAuthorization} from '../hooks/useHealthAuthorization';
 import {TodayItem} from './TodayItem';
 import {WeeklyStepChart} from './WeeklyStepChart';
+import {WeeklyStepComparisonChart} from './WeeklyStepComparisonChart';
 
 const HealthKitScreen = () => {
   const [status, request] = useHealthAuthorization();
@@ -27,6 +28,7 @@ const HealthKitScreen = () => {
               unit="count"
             />
             <WeeklyStepChart />
+            <WeeklyStepComparisonChart />
             {/* {lastSynced && (
               <Text style={{marginTop: 10}} variant="labelSmall">
                 Last synced at: {lastSynced.toLocaleTimeString()}
